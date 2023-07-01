@@ -20,7 +20,7 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - uses: shinyinc/action-aws-cli@v1.2
+      - uses: jithesh02/action-aws-cli@v1.2
       - run: aws s3 sync dist s3:/mfe-dashboard26062002/container/latest
         env:
           AWS_ACCESS_KEY_ID: AKIA4XME5VGS246ZXCY7
